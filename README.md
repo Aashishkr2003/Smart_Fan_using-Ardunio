@@ -1,4 +1,4 @@
-# Project on Smart Fan using Ardunio 
+# Project on Smart Fan using Arduino 
 
 The smart fan project utilizes temperature and humidity sensors to automatically adjust fan speed for optimal comfort. 
 By integrating these sensors, the fan can dynamically respond to changes in environmental conditions, ensuring 
