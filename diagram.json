@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "author": "Rajat Singh & Aashish Kumar",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 115.8, "left": 18.6, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -57.3,
+      "left": -63,
+      "attrs": { "temperature": "44", "humidity": "50" }
+    },
+    { "type": "wokwi-servo", "id": "servo1", "top": -126.8, "left": 211.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "dht1:GND", "uno:GND.1", "black", [ "v19.2", "h134.4" ] ],
+    [ "dht1:VCC", "uno:5V", "red", [ "v278.4", "h230.4" ] ],
+    [ "uno:GND.1", "servo1:GND", "black", [ "v-201.6", "h77.1" ] ],
+    [ "uno:5V", "servo1:V+", "red", [ "v28.7", "h157.4", "v-278.4", "h-182.4", "v-115.2" ] ],
+    [ "uno:9", "servo1:PWM", "green", [ "v0" ] ],
+    [ "dht1:SDA", "uno:A1", "green", [ "v307.2", "h278.5" ] ]
+  ],
+  "dependencies": {}
+}
